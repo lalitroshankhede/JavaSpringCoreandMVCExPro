@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <bean/> definitions here -->
+
+
+	<bean class="com.collectiontypes.Emp" name="empData">
+
+		<property name="empId" value="101" />
+		<property name="empName" value="LalitR" />
+
+		<property name="phones">
+
+			<list>
+
+				<value>8099593</value>
+				<value>76756565</value>
+				<value>3535345</value>
+			</list>
+
+		</property>
+
+
+		<property name="city">
+
+			<set>
+
+				<value>Nagpur</value>
+				<value>Mumbai</value>
+				<value>Pune</value>
+			</set>
+
+		</property>
+
+		<property name="courses">
+
+			<map>
+
+				<entry key="Java" value="6 months" />
+				<entry key="Python" value="3 months" />
+				<entry key="JavaScript" value="2 months" />
+
+			</map>
+
+		</property>
+
+		<property name="props">
+
+
+			<props>
+
+				<prop key="loginId">lalit@gmail.com</prop>
+				<prop key="password">Lalit@123</prop>
+			</props>
+
+		</property>
+
+	</bean>
+
+
+</beans>
